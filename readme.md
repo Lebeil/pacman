@@ -36,7 +36,7 @@ Un jeu Pacman moderne développé en JavaScript pur, utilisant Canvas pour les g
 
 ## 🚀 Installation
 
-1. Clonez le repository : 
+1. Clonez le repository : https://github.com/Lebeil/pacman
 
 2. Ouvrez `index.html` dans votre navigateur préféré
 
@@ -65,7 +65,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Crédits
 
-Développé avec ❤️ par [Votre Nom]
+Développé avec ❤️ par moi et Claude 3.5
 
 ---
 
