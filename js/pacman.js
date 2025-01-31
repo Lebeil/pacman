@@ -2,7 +2,7 @@ export class Pacman {
     constructor(startPosition) {
         this.x = startPosition.x;
         this.y = startPosition.y;
-        this.radius = 15;
+        this.radius = 11;
         this.speed = 3;
         this.direction = { x: 0, y: 0 };
         this.mouthOpen = 0;
@@ -41,7 +41,11 @@ export class Pacman {
         const nextX = this.x + this.direction.x * this.speed;
         const nextY = this.y + this.direction.y * this.speed;
 
-        if (!map.checkCollision(nextX, nextY)) {
+        const margin = this.radius * 0.8;
+        if (!map.checkCollision(nextX - margin, nextY - margin) &&
+            !map.checkCollision(nextX + margin, nextY - margin) &&
+            !map.checkCollision(nextX - margin, nextY + margin) &&
+            !map.checkCollision(nextX + margin, nextY + margin)) {
             this.x = nextX;
             this.y = nextY;
         }
