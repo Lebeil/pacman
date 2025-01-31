@@ -31,7 +31,7 @@ class Game {
         return await Swal.fire({
             title: 'Pacman Moderne',
             text: 'Utilisez les flèches du clavier pour déplacer Pacman. Évitez les fantômes !',
-            imageUrl: 'https://raw.githubusercontent.com/sweetalert2/sweetalert2/master/assets/swal2-logo.png',
+   
             imageWidth: 100,
             imageHeight: 100,
             confirmButtonText: 'Commencer',
